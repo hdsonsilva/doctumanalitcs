@@ -1,0 +1,14 @@
+{
+	"folders":
+	[
+		{
+			"path": "/var/www/wordpress/wp-content"
+		},
+		{
+			"path": "/var/www/financeiro"
+		},
+		{
+			"path": "/home/hudson/Documentos/mobile/smssender"
+		}
+	]
+}

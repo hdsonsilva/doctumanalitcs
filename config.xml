@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.softwareshd.boletoatualizado" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Boleto Atualizado</name>
+    <description>
+        Saia da fila dos bancos. Atualize seu boleto após vencido e saia da fila, pagando o boleto em qualquer bankline, caixa eletrônico e pelo proprio aplicativo do seu banco no celular. Não fique sem pagar o boleto por não ter tempo de ir ao banco. Agora ficou fácil pagar o seu boleto atrasado
+    </description>
+    <author email="contato@softwareshd.com.br" href="http://www.softwareshd.com.br">
+        Softwares HD
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+</widget>
