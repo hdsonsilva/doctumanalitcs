@@ -23,7 +23,7 @@
 
     <!-- --------------- App init --------------- -->
 
-    <title>Boleto Atualizado</title>
+    <title>Doctum Analitics</title>
 
     <style>
         .page--menu-page__background {
@@ -156,84 +156,17 @@
                         <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
                     </ons-toolbar-button>
                 </div>
-                <div class="center">Boleto Atualizado</div>
+                <div class="center">Doctum:: Login</div>
             </ons-toolbar>
 
             <ons-row style="margin-top: 5px; text-align: center;">
                 <ons-col>
-                    <p style="color: #999; font-size: 11px;">Informe a linha digitável do boleto para atualizá-lo</p>
-                    <input id='b1' type="number" class="text-input" placeholder="00000" value="23790" style="width:65px;background:white;">
-                    <input id='b2' type="number" class="text-input" placeholder="00000" value="09000" style="width:65px;background:white;"> 
-                    <input id='b3' type="number" class="text-input" placeholder="00000" value="94356" style="width:65px;background:white;"> 
-                    <input id='b4' type="number" class="text-input" placeholder="00000" value="680002" style="width:65px;background:white;"> 
-                    <input id='b5' type="number" class="text-input" placeholder="00000" value="16012" style="width:65px;background:white;"> 
-                    <input id='b6' type="number" class="text-input" placeholder="00000" value="222002" style="width:65px;background:white;"> 
-                    <input id='b7' type="number" class="text-input" placeholder="0" value="1" style="width:30px;background:white;"> 
-                    <input id='b8' type="number" class="text-input" placeholder="00000000000008" value="64280000089012" style="width:140px;background:white;">
-                    <br>
-
-                    <p style="color: #999; font-size: 11px;width:100%;text-align:center;">Novo Vencimento</p>
-                    <p style="color: #999; font-size: 11px;width:100%;text-align:center;"><input type='date' id='vencimento' name='vencimento' value='' class="text-input" style="width:90px;background:white;margin-right:10px">
                     
-                    <p style="color: #999; font-size: 11px;width:100%;text-align:right;"> 
-                        <table width="100%">
-                            <tr>
-                                <td align="right">
-                                    <font style="color: #999; font-size: 11px;">R$ </font><ons-switch id='multa__' var="multa_" onchange="changed()"></ons-switch><font style="color: #999; font-size: 11px;">%</font>
-                                </td>
-                                <td style="width:60px" align="right">
-                                    <font style="color: #999; font-size: 11px;">Multa:</font>
-                                </td>
-                                <td align="right" width="120px">
-                                    <input type='text' id='multa' name='multa' value='0,00' class="text-input" style="width:px;background:white;width:110px;text-align:right;margin-right:10px">
-                                </td>
-                            </tr>
-                        </table>
-                    </p>
-                    
-                    <p style="color: #999; font-size: 13px;width:100%;text-align:right">
-                        <table width="100%">
-                            <tr>
-                                <td align="right">
-                                    <font style="color: #999; font-size: 13px;">R$ </font><ons-switch var="juros_" onchange="changed()"></ons-switch><font style="color: #999; font-size: 13px;">%</font>
-                                </td>
-                                <td width="60px" align="right">
-                                    <font style="color: #999; font-size: 13px;">Juros/dia:</font>
-                                </td>
-                                <td width="120px" align="right">
-                                    <input type='text' id='juros' name='juros' value='0,00' class="text-input" style="width:px;background:white;width:110px;text-align:right;margin-right:10px">
-                                </td>
-                            </tr>
-                        </table>
-                    </p>
-                    <br>
-                    <!--<ons-button modifier="material" ng-click="menu.toggleMenu()"> -->
-                    <ons-button modifier="material" animation="slide-down" onclick="verificaLinhaDigitavel();">
-                        Atualizar boleto
-                    </ons-button>
-                    <br>
-                    <br>
                     
                 </ons-col>
             </ons-row>
             <ons-row style="margin-top: 10px; text-align: center;">
                 <ons-col>
-                    
-                        <div id='exiberesultado'>
-
-                        </div>
-                        <div>
-                            <input type='text' id='campoparacopiar' class="text-input" placeholder="" value="" style="width:145px;background:white;"> 
-                        </div>
-                    
-                        <div id='exibeVencimento'>
-
-                        </div>
-                    
-                    
-                        <div id='exibeValor'>
-
-                        </div>
                     
                 </ons-col>
             </ons-row>
