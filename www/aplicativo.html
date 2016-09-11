@@ -122,13 +122,23 @@
                 </ons-list-item>
 
                 <ons-list-item class="menu-item" ng-click="menu.setMainPage('page2.html', {closeMenu: true})">
-                    <ons-icon icon="fa-bookmark"></ons-icon>
-                    Atualizar
+                    <ons-icon icon="ion-arrow-up-a"></ons-icon>
+                    Orçamento
                 </ons-list-item>
 
-                <ons-list-item class="menu-item" ng-click="menu.setMainPage('page1.html', {closeMenu: true})">
-                    <ons-icon icon="fa-twitter"></ons-icon>
-                    Testar
+                <ons-list-item class="menu-item" ng-click="menu.setMainPage('page3.html', {closeMenu: true})">
+                    <ons-icon icon="ion-pie-graph"></ons-icon>
+                    Financeiro
+                </ons-list-item>
+
+                <ons-list-item class="menu-item" ng-click="menu.setMainPage('page4.html', {closeMenu: true})">
+                    <ons-icon icon="ion-plus-circled"></ons-icon>
+                    Contas a receber
+                </ons-list-item>
+
+                <ons-list-item class="menu-item" ng-click="menu.setMainPage('page5.html', {closeMenu: true})">
+                    <ons-icon icon="ion-funnel"></ons-icon>
+                    Contas a pagar
                 </ons-list-item>
             </ons-list>
 
@@ -143,6 +153,9 @@
                 <ons-list-item class="bottom-menu-item" ng-click="menu.setMainPage('page1.html', {closeMenu: true})">
                     Sobre
                 </ons-list-item>
+                <ons-list-item class="bottom-menu-item" ng-click="menu.setMainPage('page1.html', {closeMenu: true})">
+                    Sair
+                </ons-list-item>
 
             </ons-list>
         </ons-page>
@@ -156,12 +169,18 @@
                         <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
                     </ons-toolbar-button>
                 </div>
-                <div class="center">Doctum:: Login</div>
+                <div class="center">Doctum:: Analytics</div>
             </ons-toolbar>
 
             <ons-row style="margin-top: 5px; text-align: center;">
                 <ons-col>
-                    
+                    <ons-row style="margin-top: 100px; text-align: center;">
+                <ons-col>
+                    <ons-button modifier="light" ng-click="menu.toggleMenu()">
+                        Menu Principal
+                    </ons-button>
+                </ons-col>
+            </ons-row>
                     
                 </ons-col>
             </ons-row>
@@ -172,6 +191,8 @@
             </ons-row>
         </ons-page>
     </ons-template>
+
+
     <ons-template id="page2.html">
         <ons-page>
             <ons-toolbar>
@@ -180,7 +201,76 @@
                         <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
                     </ons-toolbar-button>
                 </div>
-                <div class="center">Page 2</div>
+                <div class="center">Orçamento</div>
+            </ons-toolbar>
+
+
+            <ons-row style="margin-top: 100px; text-align: center;">
+                <ons-col>
+                    <ons-button modifier="light" ng-click="menu.toggleMenu()">
+                        Toggle Menu
+                    </ons-button>
+                </ons-col>
+            </ons-row>
+
+        </ons-page>
+        </ons-template>
+
+        <ons-template id="page3.html">
+        <ons-page>
+            <ons-toolbar>
+                <div class="left">
+                    <ons-toolbar-button ng-click="menu.toggle()">
+                        <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
+                    </ons-toolbar-button>
+                </div>
+                <div class="center">Financeiro</div>
+            </ons-toolbar>
+
+
+            <ons-row style="margin-top: 100px; text-align: center;">
+                <ons-col>
+                    <ons-button modifier="light" ng-click="menu.toggleMenu()">
+                        Toggle Menu
+                    </ons-button>
+                </ons-col>
+            </ons-row>
+
+        </ons-page>
+        </ons-template>
+
+        <ons-template id="page4.html">
+        <ons-page>
+            <ons-toolbar>
+                <div class="left">
+                    <ons-toolbar-button ng-click="menu.toggle()">
+                        <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
+                    </ons-toolbar-button>
+                </div>
+                <div class="center">Contas a Receber</div>
+            </ons-toolbar>
+
+
+            <ons-row style="margin-top: 100px; text-align: center;">
+                <ons-col>
+                    <ons-button modifier="light" ng-click="menu.toggleMenu()">
+                        Toggle Menu
+                    </ons-button>
+                </ons-col>
+            </ons-row>
+
+        </ons-page>
+        </ons-template>
+
+        <ons-template id="page5.html">
+        <ons-page>
+            <ons-toolbar>
+                <div class="left">
+                    <ons-toolbar-button ng-click="menu.toggle()">
+                        <ons-icon icon="ion-navicon" size="28px" fixed-width="false"></ons-icon>
+                    </ons-toolbar-button>
+                </div>
+                <div class="center">Contas as Pagar</div>
             </ons-toolbar>
 
 

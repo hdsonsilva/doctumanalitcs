@@ -1,3 +1,16 @@
+Para atualizar o codigo siga:
+
+Adicionar arquivos:
+
+git add arquivo
+
+Atualizar codigo:
+git commit -am "Descricao da atualizacao"
+git push -u origin master
+
+
+
+
 Onsen UI Quick Startup Guide
 ====
 
